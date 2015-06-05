@@ -45,6 +45,19 @@ void kbfun_shift_press_release(void) {
 
 /*
  * [name]
+ *   Alt + press|release
+ *
+ * [description]
+ *   Generate a 'alt' press or release before the normal keypress or
+ *   keyrelease
+ */
+void kbfun_alt_press_release(void) {
+	_kbfun_press_release(IS_PRESSED, KEY_LeftAlt);
+	kbfun_press_release();
+}
+
+/*
+ * [name]
  *   Two keys => capslock
  *
  * [description]
@@ -126,6 +139,7 @@ void kbfun_layer_push_numpad(void) {
 	main_layers_pop_id(numpad_layer_id);
 	numpad_layer_id = main_layers_push(keycode, eStickyNone);
 	numpad_toggle_numlock();
+	_kb_led_1_on();
 }
 
 /*
@@ -145,6 +159,7 @@ void kbfun_layer_pop_numpad(void) {
 	main_layers_pop_id(numpad_layer_id);
 	numpad_layer_id = 0;
 	numpad_toggle_numlock();
+	_kb_led_1_off();
 }
 
 /*

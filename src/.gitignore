@@ -4,4 +4,4 @@
 *.map
 *.o
 *.o.dep
-
+*.sublime*

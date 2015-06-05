@@ -21,6 +21,10 @@
 // ----------------------------------------------------------------------------
 
 #define  MAX_ACTIVE_LAYERS  20
+#define LED_ON		(PORTD |= (1<<6))
+#define LED_OFF		(PORTD &= ~(1<<6))
+#define LED_CONFIG	(DDRD |= (1<<6))
+
 
 // ----------------------------------------------------------------------------
 
@@ -52,7 +56,34 @@ bool    main_arg_trans_key_pressed;
  * main()
  */
 int main(void) {
-	kb_init();  // does controller initialization too
+	bool try_again;
+	uint8_t init_return_value;
+	try_again = 1;
+	LED_CONFIG;
+	LED_OFF;
+	while (try_again == 1) {
+		init_return_value = kb_init();  // does controller initialization too
+		if (init_return_value != 0) {
+			// initialization failed
+			if  (init_return_value == 1) {
+				LED_ON;
+				_delay_ms(1000);
+				LED_OFF;
+				_delay_ms(1000);
+			} else {
+				LED_ON;
+				_delay_ms(500);
+				LED_OFF;
+				_delay_ms(500);
+			}
+		} else {
+			try_again = 0;
+		}
+	}
+	_delay_ms(200);
+	LED_OFF;
+
+	// kb_init();
 
 	kb_led_state_power_on();
 
