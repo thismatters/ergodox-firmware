@@ -550,6 +550,19 @@ void kbfun_layer_pop_10(void) {
 	layer_pop(10);
 }
 
+void kbfun_layer_pop_all(void) {
+  layer_pop(1);
+  layer_pop(2);
+  layer_pop(3);
+  layer_pop(4);
+  layer_pop(5);
+  layer_pop(6);
+  layer_pop(7);
+  layer_pop(8);
+  layer_pop(9);
+  layer_pop(10);
+}
+
 /* ----------------------------------------------------------------------------
  * ------------------------------------------------------------------------- */
 

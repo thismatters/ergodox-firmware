@@ -51,6 +51,7 @@
 	void kbfun_layer_pop_8   (void);
 	void kbfun_layer_pop_9   (void);
 	void kbfun_layer_pop_10  (void);
+	void kbfun_layer_pop_all (void);
 	// ---
 
 	// device
