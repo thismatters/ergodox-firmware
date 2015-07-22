@@ -296,7 +296,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
 
 
-    // RELEASE L3: numpad
+    // PRESS L3: numpad
     KB_MATRIX_LAYER( NULL,
     // left hand
     ktrans,     ktrans,     ktrans,     ktrans,     ktrans,     ktrans,     ktrans,
@@ -341,7 +341,7 @@ const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
    ktrans,   ktrans,   ktrans,
    ktrans,   ktrans,   ktrans ),
 
-    // PRESS L5: QWERTY 
+    // PRESS L5: QWERTY Mirrored
     KB_MATRIX_LAYER( NULL,
     // left hand
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     lpop2,
@@ -488,7 +488,7 @@ const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] =
    ktrans,   ktrans,   ktrans,
    ktrans,   ktrans,   ktrans ),
 
-    // RELEASE L5: QWERTY
+    // RELEASE L5: QWERTY Mirrored
     KB_MATRIX_LAYER( NULL,
     // left hand
     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     NULL,
