@@ -12,6 +12,10 @@ and a [web UI] (https://www.massdrop.com/ext/ergodox)
 for configuring layouts.
 
 
+### This fork
+* This fork has some custom layers including a mirrorboard layer.
+* When I first built my ErgoDox I experienced some issues with the left hand, it would fail to initialize correctly and subsequently wouldn't allow me to type. Very frustrating especially since the keyboard gave no indication of the failure. I modified the firmware to notify me when the left side failed to initialize by blinking the amber LED on the teensy. I set it up to blink a different pattern based on the failure, and it worked well enough to allow me to troubleshoot the hardware. As it turns out the ground pin on the MCP23018 wasn't soldered well; this was causing the intermittent failure. Since resoldering there have been no issues, but the firmware change may be useful to anybody experiencing the same issue.
+ 
 ### Notes
 A rewrite is currently underway (see the 'partial-rewrite' branch) and so this
 branch isn't quite receiving the attention it used to.  Things that have
