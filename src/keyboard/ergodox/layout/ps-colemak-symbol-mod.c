@@ -38,7 +38,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     _tab,       _Q,         _W,         _F,         _P,         _G,         _esc,
     _ctrlL,     _A,         _R,         _S,         _T,         _D,
     _shiftL,    _Z,         _X,         _C,         _V,         _B,         2,
-    _guiL,      _grave,     _backslash, _altL,      1,
+    1,      _grave,       _alt,          1,      _guiL,
     
                                                                 _ctrlL,     _altL,
                                                     0,          0,          _home,
@@ -69,7 +69,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
                                                     0,          0,          0,
                                                     0,          0,          0,
     // right hand
-    _F12,       _F6,        _F7,        _F8,        _F9,        _F10,       _power,
+    _F12,       _F6,        _F7,        _F8,        _F9,        _F10,       _F12,
     0,          0,          _equal,     _equal,     _dash,      _dash,      0,
                 _arrowL,    _arrowD,    _arrowU,    _arrowR,    0,          0,
     0,          _6,         _7,         _8,         _9,         _0,         _mute,
@@ -87,7 +87,7 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     0,          _Q,         _W,         _E,         _R,         _T,         0,
     0,          _A,         _S,         _D,         _F,         _G,
     0,          _Z,         _X,         _C,         _V,         _B,         0,
-    0,          0,          0,          0,          5,
+    5,           0,          0,          0,          0,
 
                                                                 0,          0,
                                                     0,          0,          0,
@@ -107,15 +107,14 @@ const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
     // LAYOUT L3: numpad
     KB_MATRIX_LAYER( 0,
     // left hand
-    0,    _mul_kp,    _div_kp,  _equal_kp,          0,          0,          0,
-    0,    _sub_kp,      _9_kp,      _8_kp,      _7_kp,          0,          0,
-    0,    _add_kp,      _6_kp,      _5_kp,      _4_kp,          0,
-    0,  _enter_kp,      _3_kp,      _2_kp,      _1_kp,          0,          0,
-    0,  _enter_kp,    _period,          0,    _insert,
-
-                                                                0,          0,
-                                                    0,          0,          0,
-                                                _0_kp,          0,          0,
+    0,  0,  0,  0,  0,  0,  0,
+    0,  0,  0,  0,  0,  0,  0,
+    0,  0,  0,  0,  0,  0,
+    0,  0,  0,  0,  0,  0,  0,
+    0,  0,  0,  0,  0,
+                        0,  0,
+                        0,  0,  0,
+                        0,  0,  0,
     // right hand
     3,          0,          3,          _equal_kp,  _div_kp,    _mul_kp,    0,
     0,          0,          _7_kp,      _8_kp,      _9_kp,      _sub_kp,    0,

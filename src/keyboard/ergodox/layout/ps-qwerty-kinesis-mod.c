@@ -30,18 +30,18 @@ Layer 4: mypaint
 
 const uint8_t PROGMEM _kb_layout[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
-	KB_MATRIX_LAYER(  // layout: layer 0: default
+  KB_MATRIX_LAYER(  // layout: layer 0: default
 // unused
 0,
 // left hand
-    _equal,     _1,         _2,      _3,      _4,    _5,    3,
-_tab,     _Q,         _W,      _E,      _R,    _T, _esc,
-      _ctrlL,     _A,         _S,      _D,      _F,    _G,
-   _shiftL,     _Z,         _X,      _C,      _V,    _B,    _space,
-     _guiL, _grave, _altL, 1, 2,
-                                                 _ctrlL, _altL,
-                                              0,      0, _home,
-                                            _bs,   _del,  _end,
+    _equal,     _1,    _2, _3,    _4, _5,      3,
+      _tab,     _Q,    _W, _E,    _R, _T,   _esc,
+    _ctrlL,     _A,    _S, _D,    _F, _G,
+   _shiftL,     _Z,    _X, _C,    _V, _B, _space,
+         2, _grave, _altL,  1, _guiL,
+                                         _ctrlL, _altL,
+                                      0,      0, _home,
+                                    _bs,   _del,  _end,
 // right hand
         3, _6,      _7,      _8,      _9,         _0,     _dash,
         0, _Y,      _U,      _I,      _O,         _P, _backslash,
@@ -53,7 +53,7 @@ _pageU,      0,      0,
 _pageD, _enter, _space ),
 
 
-	KB_MATRIX_LAYER(  // layout: layer 1: function and symbol keys
+  KB_MATRIX_LAYER(  // layout: layer 1: function and symbol keys
 // unused
 0,
 // left hand
@@ -66,7 +66,7 @@ _pageD, _enter, _space ),
                                                          0,  0,  0,
                                                          0,  0,  0,
 // right hand
-_F12,       _F6,    _F7,       _F8,       _F9,         _F10,   _power,
+_F12,       _F6,    _F7,       _F8,       _F9,         _F10,     _F12,
    0,         0,  _dash,    _comma,   _period,_currencyUnit, _volumeU,
      _backslash,  _1_kp,        _9,        _0,       _equal, _volumeD,
    2,        _8,  _2_kp,     _3_kp,     _4_kp,        _5_kp,    _mute,
@@ -105,7 +105,7 @@ _bs,      _0,             _9,         _8,         _7,         _6,         0,
 // unused
 0,
 // left hand
-_bs,    _mul_kp,    _div_kp,  _equal_kp,          0,          0,          0,
+  _bs,    _mul_kp,    _div_kp,  _equal_kp,          0,          0,          0,
     0,    _sub_kp,      _9_kp,      _8_kp,      _7_kp,          0,          0,
     0,    _add_kp,      _6_kp,      _5_kp,      _4_kp,          0,
     0,  _enter_kp,      _3_kp,      _2_kp,      _1_kp,          0,          0,
@@ -113,36 +113,36 @@ _bs,    _mul_kp,    _div_kp,  _equal_kp,          0,          0,          0,
 
                                                                 0,          0,
                                                     0,          0,          0,
-                                                _0_kp,          0,          0,
+                                                    0,          0,          0,
     // right hand
-    3,          0,          3,          _equal_kp,  _div_kp,    _mul_kp,    _bs,
-    0,          0,          _7_kp,      _8_kp,      _9_kp,      _sub_kp,    0,
-                0,          _4_kp,      _5_kp,      _6_kp,      _add_kp,    0,
-    0,          0,          _1_kp,      _2_kp,      _3_kp,    _enter_kp,  0,
-                          _insert,          0,    _period,    _enter_kp,  0,
+    3,          0,          3,  _equal_kp,    _div_kp,      _mul_kp, _bs,
+    0,          0,      _7_kp,      _8_kp,      _9_kp,      _sub_kp,   0,
+                0,      _4_kp,      _5_kp,      _6_kp,      _add_kp,   0,
+    0,          0,      _1_kp,      _2_kp,      _3_kp,    _enter_kp,   0,
+                      _insert,          0,    _period,    _enter_kp,   0,
 
     0,          0,
     0,          0,          0,
     0,          0,          _0_kp ),
 
-	KB_MATRIX_LAYER(  // layout: layer 4: mypaint layer
+  KB_MATRIX_LAYER(  // layout: layer 4: mypaint layer
 // unused
 0,
 // left hand
-  0,       _1, _2,      _3,     _4,  _5, _esc,
-  0,       _6, _7,      _8,     _9,  _0,    _F6,
-  0,    _A, _S,      _D,     _F,  _E,
-  0, _Z, _Y,      _O,     _R,  _M,    _F7,
-  0,   0,  0,  _equal,  _dash,
-		          _ctrlR,  0,
-		      0,  0,  0,
-		      0,  0,  0,
+  0, _1, _2,     _3,    _4, _5, _esc,
+  0, _6, _7,     _8,    _9, _0, _F6,
+  0, _A, _S,     _D,    _F, _E,
+  0, _Z, _Y,     _O,    _R, _M, _F7,
+  0,  0,  0, _equal, _dash,
+                              _ctrlR,  0,
+                          0,  0,  0,
+                          0,  0,  0,
 // right hand
       0,  0,  0,  0,  0,  0,  0,
       0,  0,  0,  0,  0,  0,  0,
-      	  0,  0,  0,  0,  0,  0,
+          0,  0,  0,  0,  0,  0,
       0,  0,  0,  0,  0,  0,  0,
-	            0,  0,  0,  0,  0,
+              0,  0,  0,  0,  0,
   0,  0,
   0,  0,  0,
   0,  0,  0 ),
@@ -199,15 +199,15 @@ _bs,    _mul_kp,    _div_kp,  _equal_kp,          0,          0,          0,
 
 const void_funptr_t PROGMEM _kb_layout_press[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
-	KB_MATRIX_LAYER(  // press: layer 0: qwerty
+  KB_MATRIX_LAYER(  // press: layer 0: qwerty
 // unused
 NULL,
 // left hand
- kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, slpunum,
- kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
- kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
- s2kcap, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
- kprrel, kprrel, kprrel, lpush1, lstick2,
+  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, slpunum,
+  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+  kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+  s2kcap, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+ lstick2, kprrel, kprrel, lpush1, kprrel,
                                                  kprrel, kprrel,
                                            NULL,   NULL, kprrel,
                                          kprrel, kprrel, kprrel,
@@ -222,7 +222,7 @@ NULL,
  kprrel, kprrel, kprrel ),
 
 
-	KB_MATRIX_LAYER(  // press: layer 1: function and symbol keys
+  KB_MATRIX_LAYER(  // press: layer 1: function and symbol keys
 // unused
 NULL,
 // left hand
@@ -294,7 +294,7 @@ ktrans,     ktrans,
 ktrans,     ktrans,     ktrans,
 ktrans,     ktrans,     kprrel ),
 
-	KB_MATRIX_LAYER(  // press: layer 4: mypaint layer
+  KB_MATRIX_LAYER(  // press: layer 4: mypaint layer
 // unused
 NULL,
 // left hand
@@ -323,7 +323,7 @@ NULL,
 
 const void_funptr_t PROGMEM _kb_layout_release[KB_LAYERS][KB_ROWS][KB_COLUMNS] = {
 
-	KB_MATRIX_LAYER(  // release: layer 0: Qwerty
+  KB_MATRIX_LAYER(  // release: layer 0: Qwerty
 // unused
 NULL,
 // left hand
@@ -346,7 +346,7 @@ NULL,
  kprrel, kprrel, kprrel ),
 
 
-	KB_MATRIX_LAYER(  // release: layer 1: function and symbol keys
+  KB_MATRIX_LAYER(  // release: layer 1: function and symbol keys
 // unused
 NULL,
 // left hand
@@ -369,7 +369,7 @@ NULL,
  ktrans, ktrans, ktrans ),
 
 
-	KB_MATRIX_LAYER(  // release: layer 2: qwerty mirrored
+  KB_MATRIX_LAYER(  // release: layer 2: qwerty mirrored
 // unused
 NULL,
 // left hand
@@ -394,7 +394,7 @@ ktrans,     ktrans,     ktrans,
 ktrans,     ktrans,     ktrans ),
 
 
-	KB_MATRIX_LAYER(  // release: layer 3: numpad
+  KB_MATRIX_LAYER(  // release: layer 3: numpad
 // unused
 NULL,
 // left hand
@@ -440,8 +440,8 @@ NULL,
    ktrans,   ktrans,   ktrans,
    ktrans,   ktrans,   ktrans ),
 
-	KB_MATRIX_LAYER(  // release: layer 3: nothing (just making sure unused
-			  // functions don't get compiled out)
+  KB_MATRIX_LAYER(  // release: layer 3: nothing (just making sure unused
+        // functions don't get compiled out)
 // unused
 NULL,
 // other
