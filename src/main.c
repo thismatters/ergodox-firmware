@@ -61,25 +61,25 @@ int main(void) {
 	try_again = 1;
 	LED_CONFIG;
 	LED_OFF;
-	while (try_again == 1) {
-		init_return_value = kb_init();  // does controller initialization too
-		if (init_return_value != 0) {
-			// initialization failed
-			if  (init_return_value == 1) {
-				LED_ON;
-				_delay_ms(1000);
-				LED_OFF;
-				_delay_ms(1000);
-			} else {
-				LED_ON;
-				_delay_ms(500);
-				LED_OFF;
-				_delay_ms(500);
-			}
-		} else {
-			try_again = 0;
-		}
-	}
+	init_return_value = kb_init();  // does controller initialization too
+	// while (try_again == 1) {
+	// 	if (init_return_value != 0) {
+	// 		// initialization failed
+	// 		if  (init_return_value == 1) {
+	// 			LED_ON;
+	// 			_delay_ms(1000);
+	// 			LED_OFF;
+	// 			_delay_ms(1000);
+	// 		} else {
+	// 			LED_ON;
+	// 			_delay_ms(500);
+	// 			LED_OFF;
+	// 			_delay_ms(500);
+	// 		}
+	// 	} else {
+	// 		try_again = 0;
+	// 	}
+	// }
 	_delay_ms(200);
 	LED_OFF;
 

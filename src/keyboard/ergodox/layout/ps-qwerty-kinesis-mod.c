@@ -24,7 +24,7 @@ Layer 0: Qwerty
 Layer 1: symbols
 Layer 2: Mirrorboard
 Layer 3: Numpad (both hands)
-Layer 4: mypaint
+Layer 4: artemis
 */
 
 
@@ -58,9 +58,9 @@ _pageD, _enter, _space ),
 0,
 // left hand
   4,        _F1,        _F2,       _F3,       _F4,       _F5, _F11,
-  0,  _bracketL,  _bracketR, _bracketL, _bracketR,         0,    1,
-  0, _semicolon,     _slash,     _dash,     _0_kp,_semicolon,
-  0,      _6_kp,      _7_kp,     _8_kp,     _9_kp,    _equal,    2,
+  0,  _bracketL,  _bracketL, _bracketR, _bracketR,         0,    1,
+  0,  _bracketL,  _bracketL, _bracketR, _bracketR,_semicolon,
+  0,         _9,         _9,        _0,        _0,    _equal,    2,
   0,          0,          0,         0,         0,
                                                              0,  0,
                                                          0,  0,  0,
@@ -103,15 +103,14 @@ _bs,         _0,      _9,     _8, _7,  _6, 0,
 // unused
 0,
 // left hand
-  _bs,    _mul_kp,    _div_kp,  _equal_kp,          0,          0,          0,
-    0,    _sub_kp,      _9_kp,      _8_kp,      _7_kp,          0,          0,
-    0,    _add_kp,      _6_kp,      _5_kp,      _4_kp,          0,
-    0,  _enter_kp,      _3_kp,      _2_kp,      _1_kp,          0,          0,
-    0,  _enter_kp,    _period,          0,    _period,
-
-                                                                0,          0,
-                                                    0,          0,          0,
-                                                    0,          0,          0,
+    _equal,     _1,    _2, _3,    _4, _5,      3,
+      _tab,     _Q,    _W, _E,    _R, _T,   _esc,
+    _ctrlL,     _A,    _S, _D,    _F, _G,
+   _shiftL,     _Z,    _X, _C,    _V, _B, _space,
+         2, _grave, _altL,  1, _guiL,
+                                         _ctrlL, _altL,
+                                      0,      0, _home,
+                                    _bs,   _del,  _end,
     // right hand
     3,          0,          3,  _equal_kp,    _div_kp,      _mul_kp, _bs,
     0,          0,      _7_kp,      _8_kp,      _9_kp,      _sub_kp,   0,
@@ -123,18 +122,18 @@ _bs,         _0,      _9,     _8, _7,  _6, 0,
     0,          0,          0,
     0,          0,          _0_kp ),
 
-  KB_MATRIX_LAYER(  // layout: layer 4: mypaint layer
+  KB_MATRIX_LAYER(  // layout: layer 4: artemis helm
 // unused
 0,
 // left hand
-  0, _1, _2,     _3,    _4, _5, _esc,
-  0, _6, _7,     _8,    _9, _0, _F6,
-  0, _A, _S,     _D,    _F, _E,
-  0, _Z, _Y,     _O,    _R, _M, _F7,
-  0,  0,  0, _equal, _dash,
-                              _ctrlR,  0,
-                          0,  0,  0,
-                          0,  0,  0,
+    _equal,     _1,    _2, _3,    _4, _5,      3,
+      _tab,     _Q,    _W, _R,    _insert, _T,   _esc,
+    _ctrlL,     _A,    _S, _D,    _del, _Y,
+   _shiftL,     _Z,    _X, _C,    _V, _B, _space,
+         2, _grave, _altL,  1, _guiL,
+                                         _ctrlL, _altL,
+                                      0,      0, _home,
+                                    0,   _enter,  _end,
 // right hand
       0,  0,  0,  0,  0,  0,  0,
       0,  0,  0,  0,  0,  0,  0,
@@ -248,9 +247,9 @@ NULL,
 NULL,
 // left hand
    lpush4, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
- ktrans,sshprre,sshprre, kprrel, kprrel,   NULL,  ktrans,
+ ktrans,sshprre,sshprre,sshprre,sshprre,   NULL,  ktrans,
  ktrans, kprrel, kprrel, kprrel, kprrel,sshprre,
- ktrans, kprrel, kprrel, kprrel, kprrel,sshprre, ktrans,
+ ktrans,sshprre,sshprre,sshprre,sshprre,sshprre, ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans,
                                                  ktrans, ktrans,
                                          ktrans, ktrans, ktrans,
@@ -295,15 +294,15 @@ ktrans,     ktrans,     ktrans ),
 // unused
 NULL,
 // left hand
-kprrel,     ktrans,     ktrans,     ktrans,     slponum,     ktrans,     slponum,
-ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,     ktrans,
-ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
-ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,     ktrans,
-ktrans,     kprrel,     kprrel,     ktrans,     kprrel,
+kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     lpopall,
+ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
+ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     
+ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
+ktrans,     kprrel,     kprrel,     ktrans,     ktrans,
 
-                                                            ktrans,     ktrans,
+                                                            ktrans,     ktrans,     
                                                 ktrans,     ktrans,     ktrans,
-                                                kprrel,     ktrans,     ktrans,
+                                                ktrans,     kprrel,     ktrans,
 // right hand
 slponum,     ktrans,    slponum,     kprrel,     kprrel,     kprrel,     kprrel,
  ktrans,     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
@@ -315,7 +314,7 @@ ktrans,     ktrans,
 ktrans,     ktrans,     ktrans,
 ktrans,     ktrans,     kprrel ),
 
-  KB_MATRIX_LAYER(  // press: layer 4: mypaint layer
+  KB_MATRIX_LAYER(  // press: layer 4: artemis layer
 // unused
 NULL,
 // left hand
@@ -326,7 +325,7 @@ NULL,
    ktrans,   ktrans,   ktrans,   sshprre,   kprrel,
                                                    kprrel,   ktrans,
                                            ktrans,   ktrans,   ktrans,
-                                           ktrans,   ktrans,   ktrans,
+                                           ktrans,   kprrel,   ktrans,
 // right hand
           ktrans,   ktrans,   ktrans,   ktrans,   ktrans,   ktrans,   ktrans,
           ktrans,   ktrans,   ktrans,   ktrans,   ktrans,   ktrans,   ktrans,
@@ -393,9 +392,9 @@ NULL,
 NULL,
 // left hand
    NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
- ktrans,sshprre,sshprre, kprrel, kprrel,   NULL,   ktrans,
+ ktrans,sshprre,sshprre,sshprre,sshprre,   NULL,   ktrans,
  ktrans, kprrel, kprrel, kprrel, kprrel,sshprre,
- ktrans, kprrel, kprrel, kprrel, kprrel,sshprre,  ktrans,
+ ktrans,sshprre,sshprre,sshprre,sshprre,sshprre,  ktrans,
  ktrans, ktrans, ktrans, ktrans, ktrans,
                                                  ktrans, ktrans,
                                          ktrans, ktrans, ktrans,
@@ -440,15 +439,15 @@ ktrans,     ktrans,     ktrans ),
 // unused
 NULL,
 // left hand
-kprrel,     ktrans,     ktrans,     ktrans,     NULL,     ktrans,     NULL,
-ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,     ktrans,
-ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
-ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,     ktrans,
-ktrans,     kprrel,     kprrel,     ktrans,     kprrel,
+kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     NULL,
+ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
+ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,
+ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
+ktrans,     kprrel,     kprrel,     ktrans,     ktrans,
 
                                                             ktrans,     ktrans,
                                                 ktrans,     ktrans,     ktrans,
-                                                kprrel,     ktrans,     ktrans,
+                                                ktrans,     kprrel,     ktrans,
 // right hand
 NULL,       ktrans,     NULL,       kprrel,     kprrel,     kprrel,     kprrel,
 ktrans,     ktrans,     kprrel,     kprrel,     kprrel,     kprrel,     ktrans,
@@ -460,7 +459,7 @@ ktrans,     ktrans,
 ktrans,     ktrans,     ktrans,
 ktrans,     ktrans,     kprrel ),
 
-  KB_MATRIX_LAYER(  // release: layer 4: mypaint layer
+  KB_MATRIX_LAYER(  // release: layer 4: artemis layer
 // unused
 NULL,
 // left hand
@@ -471,7 +470,7 @@ NULL,
    ktrans,   ktrans,   ktrans,   sshprre,   kprrel,
                                                    kprrel,   ktrans,
                                            ktrans,   ktrans,   ktrans,
-                                           ktrans,   ktrans,   ktrans,
+                                           ktrans,   kprrel,   ktrans,
 // right hand
           ktrans,   ktrans,   ktrans,   ktrans,   ktrans,   ktrans,   ktrans,
           ktrans,   ktrans,   ktrans,   ktrans,   ktrans,   ktrans,   ktrans,
